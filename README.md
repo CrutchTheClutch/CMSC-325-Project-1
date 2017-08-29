@@ -3,7 +3,7 @@
 
 Draws a simple house and background using primitive shapes.
 
-Note: The "Java2DWeek1" folder contains the java files I was supplied to be used as an example. The result being the "Java2D_Simple_Primitives" project.
+_Note: The "Java2DWeek1" folder contains the java files I was supplied to be used as an example. The result being the "Java2D_Simple_Primitives" project._
 
 ---
 ###### This project was assigned while attending University of Maryland University College (UMUC)
