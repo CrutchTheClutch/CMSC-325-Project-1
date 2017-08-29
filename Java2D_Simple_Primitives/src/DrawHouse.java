@@ -1,11 +1,23 @@
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.JPanel;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Line2D;
 import java.awt.geom.Rectangle2D;
+import java.awt.Color;
 
-public class DrawHouse extends JPanel {
+/**
+ * Filename:    DrawHouse
+ * Author:      William Crutchfield
+ * Date:        8/28/2017
+ * Description: Draws a simple house and background using primitive shapes.
+ */
+class DrawHouse extends JPanel {
 
+    /**
+     * Paints each draw Method to the JPanel
+     * @param g Graphics object, allows rendering
+     */
     @Override
     public void paintComponent(Graphics g) {
 
@@ -20,6 +32,10 @@ public class DrawHouse extends JPanel {
         drawHouse(g);
     }
 
+    /**
+     * Draws the ground in the JPanel
+     * @param g Graphics object, allows rendering
+     */
     private void drawGround(Graphics g) {
 
         Graphics2D g2d = (Graphics2D) g;
@@ -30,6 +46,10 @@ public class DrawHouse extends JPanel {
 
     }
 
+    /**
+     * Draws the sky in the JPanel
+     * @param g Graphics object, allows rendering
+     */
     private void drawSky(Graphics g) {
 
         Graphics2D g2d = (Graphics2D) g;
@@ -40,6 +60,12 @@ public class DrawHouse extends JPanel {
 
     }
 
+    /**
+     * Draws a cloud in the JPanel
+     * @param g Graphics object, allows rendering
+     * @param x x coordinate of cloud, allows cloud to be drawn in multiple locations
+     * @param y y coordinate of cloud, allows cloud to be drawn in multiple locations
+     */
     private void drawCloud(Graphics g, int x, int y) {
 
         Graphics2D g2d = (Graphics2D) g;
@@ -69,6 +95,10 @@ public class DrawHouse extends JPanel {
 
     }
 
+    /**
+     * Draws the house in the JPanel
+     * @param g Graphics object, allows rendering
+     */
     private void drawHouse(Graphics g) {
 
         Graphics2D g2d = (Graphics2D) g;
@@ -90,6 +120,11 @@ public class DrawHouse extends JPanel {
         drawDoor(g);
     }
 
+    /**
+     * Draws a Window in the JPanel, Helper method for drawHouse
+     * @param g Graphics object, allows rendering
+     * @param x x coordinate of window, allows window to be drawn in multiple locations
+     */
     private void drawWindow(Graphics g, int x) {
 
         Graphics2D g2d = (Graphics2D) g;
@@ -121,6 +156,10 @@ public class DrawHouse extends JPanel {
 
     }
 
+    /**
+     * Draws the Door on the House, Helper method for drawHouse
+     * @param g Graphics object, allows rendering
+     */
     private void drawDoor(Graphics g) {
 
         Graphics2D g2d = (Graphics2D) g;
